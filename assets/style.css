@@ -208,7 +208,34 @@ footer {
 
   
   @media screen and (max-width: 768px) {
+   
     .card {
               flex-flow: column;
+              width: 100%;
+              height:25%;
+            }
+
+    .flexbox {
+        flex-flow: column;
+        width: 100%;
+        height:25%
+    }
+
+    .info {
+        display: none;
+    }
+    h2 {
+        display: none;
+    }
+    p {
+        text-align: center;
+        justify-content: center;
+        padding-left: 20%;
+    }
+    h4 {
+        display:none;
+    }
+    #me {
+        display: none;
     }
   }
