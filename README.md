@@ -1,16 +1,18 @@
 # Chris Beard's Portfolio
 
-## Purpose
-This assignment was to create a porfolio of my work. The first three images are links to projects I have created and the last two are placeholders until I can create more web applications. There is a link to my resume and how to contact me for future employers. 
-
 ## Description
-The website will be mobile responsive and the work boxes will switch to a column when the screen size changes. The section headers will also disappear when on a mobile device. This website is to help me showcase the projects I have created and interest potential employers. 
+This is my porfolio of the web applications that I have worked on with a team and by myself. The first three images are links to projects I have created and the last two are placeholders until I can create more web applications. There is a link to my resume for future employers and other ways to contact me as well.
+The website will be desktop and mobile device friendly too.
+
+## Live Deployed Link
+
+https://cbeard22.github.io/portfolio/
 
 ## Usage
 Upload the HTML index file and assets folder. The assets folder contains the links and images for the website. 
 
 ## Look
-![Screenshot of finished project.](./assets/images/screenshot.png)
+![Screenshot of finished project](./assets/images/portfolioScreenshot.png)
 
 ## License
 MIT License
@@ -25,5 +27,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Credit:
 
-Placeholder images for the last two work cards were from Google images. Neither of them were taken by me.
-Header image of rocks was taken by photographer Jarren Simomns.
+Placeholder images for the last two work cards were from Google images.
+Header image of rocks was taken by photographer Jarren Simmons.
