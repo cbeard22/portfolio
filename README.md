@@ -1,8 +1,8 @@
 # Chris Beard's Portfolio
 
 ## Description
-This is my porfolio of the web applications that I have worked on with a team and by myself. The first three images are links to projects I have created and the last two are placeholders until I can create more web applications. There is a link to my resume for future employers and other ways to contact me as well.
-The website will be desktop and mobile device friendly too.
+This is my portfolio of the web applications that I have worked on by myself and as a team. The first three images are links to projects I have created and the last two are placeholders until I can create more web applications. There is a link to my resume for future employers and other ways to contact me as well.
+The website is desktop and mobile device friendly too.
 
 ## Live Deployed Link
 
