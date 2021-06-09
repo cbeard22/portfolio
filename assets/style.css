@@ -1,48 +1,58 @@
-:root {
-    --white:#fff;
-}
-
-* {
+*{
+    font-family: 'Kalam', cursive;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+:root {
+    --white:#fff;
+}
+
 #about-me {
     display: flex;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     padding-left: 20px;
 }
+
 body {
-    background-color:  #1f7a7a;
+    background-color:  #164e4e;
     flex-shrink: 1;
 }
+#center{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+}
 
-.header {
+header {
     padding-top: 10px;
-    font-family: arial, serif, sans-serif;
-    background-color:#00394d;
+    background-image: url('./images/rocks.jpg');
+   background-size: cover;
+   height: 100%;
+   text-align: center;
+   color: white;
+}
+
+#imageContainer{
+    text-align: center;
+    width: 100%;
 }
 
 .header h1 {
+    padding-left: 50px;
     display: inline-block;
     font-size: 85px;
     color: white;
 }
 
-.header h1 .last{
-    color:white;
-    font-size: 85px;
-    font-family: arial, serif, sans-serif;
-}
-
 .header nav {
-    padding-top: 20px;
+    padding-top: 60px;
+    padding-right: 20px;
     margin-right: 25px;
     float: right;
-    font-family: sans-serif, serif, arial;
     font-size: 28px;
 }
 
@@ -59,28 +69,19 @@ a {
     color:white;
 }
 
-#color {
-    color:red;
-}
-
 p {
-    font-size: 18px;
-    width: 70%;
+    font-size: 26px;
+    width: 100%;
 }
 
 #me {
-    border-radius: 20px;
+    border-radius: 900px;
     width: 20%;
     height: 20%;
     margin: 20px;
+    border: 12px solid rgba(126, 237, 252, 0.24);
 }
- 
-.headerdesign {
-    width:100%;
-    height:20px;
-    background-image: url("./images/header.jpg");
-    background-repeat: repeat-x; 
-}
+
 .card {
     border-radius: 20px;
     background-color: white;
@@ -90,8 +91,8 @@ p {
     align-items: center;
     border-style: solid;
     border-width: 1px;
-    color: #1f7a7a;
-}
+    overflow: hidden;
+} 
 
 #herocard {
     border-radius: 20px;
@@ -106,7 +107,6 @@ p {
 #Work {
     display: inline-flex;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     padding-left: 20px;
 }
@@ -116,8 +116,7 @@ h2{
     justify-self: left;
     width:15%;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 35px;
     
 }
 
@@ -128,7 +127,6 @@ h4 {
     justify-self: left;
     color: red;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
 }
 
@@ -152,31 +150,29 @@ h3 {
 }
 
 #boxes img {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:100%;
     padding-top: 5px;
-    text-align: center;
-}
+} 
 
-footer {
-    position: fixed;
-    bottom:0;
-    left:0;
-    width:90%;
-    text-align: center;
-}
+ footer {
+    display:inline-block;
+    width:100%;
+} 
 
-#numbers {
+ #numbers {
     position:absolute;
     bottom:0;
     width:100%;
     display: inline-flex;
     justify-content: space-around;
     color:red;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
+
 .info {
     position:absolute;
     bottom: 0;
@@ -189,53 +185,68 @@ footer {
     margin-right: auto;
 }
 
+#contactMe {
+    color:white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    padding-top:10px
+}
 
-#center{
+#myInfo{
+    font-size: 30px;
+}
+   @media screen and (max-width: 777px) {
+   nav{display: none;}
+    .header h1{
+        font-size: 60px;
+        padding-left: 0px;
+    }
+    #myInfo{
+        font-size: 20px;
+    }
+    h2{
+        display: none;
+    }
+
+    img {
+        max-height: 180px;
+        max-width: 150px;
+    }
+
+    #me{
+        display: none;
+    }
+#herocenter{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+    #contactMe{
+        color:white;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        padding-top:10px;
+        text-align:center;
+        flex-direction: column;
+        padding-left: 0px;
+    }
 
-#contactme {
-    display: flex;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
-    padding-left: 20px;
-    float: left;
+    p,a {
+        font-size: 20px;
+    }
+
+    #boxes{
+        width:100%;
+        padding: 0px;
+        float: none;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .card{
+       max-height: 200px;
+    }
 }
-
-
-  
-  @media screen and (max-width: 768px) {
    
-    .card {
-              flex-flow: column;
-              width: 100%;
-              height:25%;
-            }
-
-    .flexbox {
-        flex-flow: column;
-        width: 100%;
-        height:25%
-    }
-
-    .info {
-        display: none;
-    }
-    h2 {
-        display: none;
-    }
-    p {
-        text-align: center;
-        justify-content: center;
-        padding-left: 20%;
-    }
-    h4 {
-        display:none;
-    }
-    #me {
-        display: none;
-    }
-  }

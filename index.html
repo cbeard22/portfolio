@@ -3,16 +3,22 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
     <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./assets/reset.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
 
 <body>
     <header class="header">
-        <h1>Chris <span class="last">Beard</span></h1>
-
+        <h1>Chris Beard</h1>
         <nav>
             <ul>
                 <li>
@@ -22,24 +28,24 @@
                     <a href="#Work">Work</a>
                 </li>
                 <li>
-                    <a href="assets\ChrisBeardResume.docx.html">Resume</a>
+                    <a href="#contactMe">Contact Me</a>
                 </li>
             </ul>
         </nav>
-        <div class="headerdesign">
-        </div>
     </header>
     <br><br>
+    <div id="imageContainer">
+        <div id="shadow">
+            <img id="me" src="assets/images/me.jpg" alt="Picture of Chris Beard" />
+        </div>
 
-    <img id="me" src="assets/images/me.jpg" alt="Picture of Chris Beard" />
-
+    </div>
     <Section id="about-me">
         <h2>About Me</h2>
-        <p>My name is Chris Beard and I am new to web design. I am excited to learn new ways of creating
-            interesting
-            and captivating websites. I am currently studing web design through the University of Minnesota's
-            Web
-            Design Bootcamp. This is my second week of class.
+        <p id="myInfo">My name is Chris Beard and I am new to web design. I am excited to learn new ways of creating
+            interesting and captivating websites. I am currently studing web design through the University of
+            Minnesota's Web Design Bootcamp. Thus Far we have learned HTML, CSS, Javascript, Jquery, and API
+            documentation.
         </p>
     </Section>
     <br><br>
@@ -53,36 +59,39 @@
     <Section id="boxes">
         <div class="flexbox">
             <div id="herocard">
-                <h3>Surf Report</h3>
-                <a href="https://www.google.com/">
+                <h3>Snaccidental Recipe</h3>
+                <a href="https://cbeard22.github.io/snaccidental-recipe/" target="_blank">
                     <div id="herocenter">
-                        <img src="assets/images/surf.jpg" alt="guy surfing the ocean">
+                        <img src="assets/images/snaccidentalRecipe.png"
+                            alt="Recipe generator web application with recipe images">
                     </div>
                 </a>
 
             </div>
 
             <div class="card">
-                <h3>Calculator</h3>
-                <a href="https://www.google.com/">
+                <h3>Weather Dashboard</h3>
+                <a href="https://cbeard22.github.io/weatherdashboard/" target="_blank">
                     <div id="center">
-                        <img src="assets/images/calculator.jpg" alt="Calculator">
+                        <img src="assets/images/weatherDashboard.png"
+                            alt="Current weather and five day forecast web application">
                     </div>
                 </a>
             </div>
 
             <div class="card">
-                <h3>LED Wall</h3>
-                <a href="https://www.google.com/">
+                <h3>Random Password Generator</h3>
+                <a href="https://cbeard22.github.io/passwordgenerator/" target="_blank">
                     <div id="center">
-                        <img src="assets/images/ledwall.jpg" alt="Wall of LED lights">
+                        <img src="assets/images/passwordGenerator.png"
+                            alt="Random password generator with password displayed">
                     </div>
                 </a>
             </div>
 
             <div class="card">
-                <h3>Blog</h3>
-                <a href="https://www.google.com/">
+                <h3>Blog: Placeholder</h3>
+                <a href="https://www.google.com/" target="_blank">
                     <div id="center">
                         <img src="assets/images/blog.jpg" alt="Table with the words Blog written on it">
                     </div>
@@ -90,36 +99,31 @@
             </div>
 
             <div class="card">
-                <h3>Puzzles</h3>
-                <a href="https://www.google.com/">
+                <h3>Puzzles: Placeholder</h3>
+                <a href="https://www.google.com/" target="_blank">
                     <div id="center">
-                        <img src="assets/images/puzzle.jpg" alt="puzzle with missing puzzle pieces">
+                        <img src="assets/images/calculator.jpg" alt="Image of calculator with numbers entered">
                     </div>
                 </a>
             </div>
         </div>
     </Section>
 
+    <footer class="footer">
+        <Section id="contactMe">
+            <p id=contact>Contact Me:</p>
+            <p><a href="tel:9522218280">(952)221-8280</a></p>
+            <p><a href="https://www.linkedin.com/in/chris-beard-aa3a2b112/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </p>
+            <p>
+                <a href="https://github.com/cbeard22" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </p>
+            <p><a href="mailto:mr.chrisbeard@gmail.com"><i class="far fa-envelope"></i> Email</a></p>
+            <p><a href="./assets/Resume2021.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a></p>
+        </Section>
+    </footer>
 </body>
 
-<footer id="footer">
-    <section id="contactme">
-        <h4>Contact Me</h4>
-    </section>
 
-    <div class="info">
-        <ul id="numbers">
-            <li>
-                952-221-8280
-            </li>
-            <li>
-                mr.chrisbeard@gmail.com
-            </li>
-            <li>
-                <a id="color"
-                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_top_card%3BoJy7PuMgQu2EPAEP%2FMVWnQ%3D%3D">Linkedin</a>
-            </li>
-    </div>
-</footer>
 
 </html>
